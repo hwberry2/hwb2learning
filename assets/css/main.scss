@@ -129,25 +129,30 @@
    (CSS-only because site.title is HTML-escaped)
    ============================ */
 
-.site-title {
+/* Target only the masthead site title link */
+.masthead__menu-item .site-title,
+a.site-title {
   white-space: nowrap;
-  font-size: 1.25rem; /* optional */
-  position: relative;
-  color: transparent; /* hides the original "hwb2 Learning" text */
+  font-size: 0 !important; /* hide original text */
+  line-height: 1 !important;
 }
 
-.site-title::before,
-.site-title::after {
-  color: inherit; /* inherit masthead link color */
-}
-
-.site-title::before {
+/* Rebuild visible text */
+.masthead__menu-item .site-title::before,
+a.site-title::before {
   content: "hwb2";
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: inherit;
 }
 
-.site-title::after {
+.masthead__menu-item .site-title::after,
+a.site-title::after {
   content: " \00A0|\00A0 Learning";
-  opacity: 0.75;
+  font-size: 1.25rem;
   font-weight: 400;
+  opacity: 0.75;
   letter-spacing: 0;
+  color: inherit;
 }
