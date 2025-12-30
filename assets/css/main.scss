@@ -72,7 +72,7 @@
 }
 
 /* ============================
-   Form embed (card + responsive)
+   Form embed (fix iframe sizing)
    ============================ */
 
 .form-embed__frame {
@@ -85,16 +85,23 @@
   background: #fff;
 }
 
-.form-embed__frame iframe {
-  display: block;
-  width: 1px;      /* trick for iframe shrink issues */
-  min-width: 100%;
-  height: 1050px;
-  border: 0;
+.form-embed__inner {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Force iframe to expand to the container */
+.form-embed__inner iframe {
+  display: block !important;
+  width: 1px !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  height: 1050px !important;
+  border: 0 !important;
 }
 
 @media (max-width: 600px) {
-  .form-embed__frame iframe {
-    height: 1250px;
+  .form-embed__inner iframe {
+    height: 1250px !important;
   }
 }

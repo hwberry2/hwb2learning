@@ -45,9 +45,12 @@ header:
 If you want pilot updates or early access, add your info below.
 
 <div class="form-embed__frame">
-  <iframe
-    src="https://docs.google.com/forms/d/e/1FAIpQLScJ4gUiY3qurGrkle4u_MEjXf_2ohRaH58JpQtSiDlTCJwkiw/viewform?embedded=true"
-    loading="lazy"
-    title="Tutoring Interest Form">
-  </iframe>
+  <div class="form-embed__inner">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLScJ4gUiY3qurGrkle4u_MEjXf_2ohRaH58JpQtSiDlTCJwkiw/viewform?embedded=true"
+      loading="lazy"
+      title="Tutoring Interest Form"
+      scrolling="no">
+    </iframe>
+  </div>
 </div>
