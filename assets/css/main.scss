@@ -105,3 +105,11 @@
     height: 1250px !important;
   }
 }
+
+/* ============================
+   Hide header permalinks
+   ============================ */
+
+.header-link {
+  display: none !important;
+}
