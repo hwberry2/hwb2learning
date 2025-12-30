@@ -7,6 +7,9 @@ excerpt: >
 header:
   overlay_image: /assets/images/hero.jpeg
   overlay_filter: 0.6
+  actions:
+    - label: "Get early access"
+      url: "#get-early-access"
 classes: wide
 ---
 
@@ -38,7 +41,7 @@ classes: wide
 - A system that scales without lowering quality
 
 ## <span id="early-access"></span>Get early access
-
+<a id="get-early-access"></a>
 If you want pilot updates or early access, add your info below.
 
 <div class="form-embed__frame">
