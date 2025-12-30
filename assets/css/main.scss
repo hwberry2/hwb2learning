@@ -75,28 +75,26 @@
    Form embed (card + responsive)
    ============================ */
 
-.form-embed {
-  margin-top: 1.5rem;
-}
-
 .form-embed__frame {
+  width: 100%;
   max-width: 980px;
-  margin: 0 auto;
+  margin: 1.5rem auto 0 auto;
   border: 1px solid rgba(0,0,0,0.10);
   border-radius: 14px;
   overflow: hidden;
   background: #fff;
 }
 
-.form-embed iframe {
+.form-embed__frame iframe {
   display: block;
-  width: 100%;
+  width: 1px;      /* trick for iframe shrink issues */
+  min-width: 100%;
   height: 1050px;
   border: 0;
 }
 
 @media (max-width: 600px) {
-  .form-embed iframe {
+  .form-embed__frame iframe {
     height: 1250px;
   }
 }
