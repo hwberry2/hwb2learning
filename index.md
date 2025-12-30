@@ -1,16 +1,13 @@
 ---
-title: "hwb2 Learning"
+title: 'hwb2 <span class="hero-pipe">|</span> Learning'
 layout: splash
 permalink: /
 excerpt: >
-  AI-augmented math tutoring with a human-led approach. Launching soon.
+  AI-augmented math tutoring with a human-led approach.
 header:
-  overlay_color: "#0B0F1A"
-  overlay_filter: "0.55"
   overlay_image: /assets/images/hero.jpeg
-  actions:
-    - label: "Get early access"
-      url: "#early-access"
+  overlay_filter: 0.6
+classes: wide
 ---
 
 ## How it works
